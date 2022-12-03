@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "Read" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+{% load humanize %}
+<h2>{% trans "user" %}</h2>
+<div class="row justify-content-center">
+	<div class="card" style="width:100%">
+		<div class="card-header">	
+			<h5>{{ recipient_user.username }}</h5>			
+		</div>
+		<div class="card-body">
+			<h5>{{ recipient_user.first_name }} {{ recipient_user.last_name }}</h5>	
+			<p><a href="mailto: {{ n.email }}"> {{ n.email }}</a></p>	
+		</div>
+		<div class="card-footer">
+			<div class="row">			
+				<center><h5>{% trans "Messages" %}:</h5></center>				
+				<form method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+					<textarea id="message" name="message" rows="4" style="width: 100%"></textarea>
+					<div class="div-button-right">
+						<button type="submit" class="btn btn-outline-success" style="width:120px">{% trans "Send" %}</button>		
+					</div>
+				</form>
+			</div>	
+			{% if message.count > 0 %}
+				<div class="row">	
+					<table>
+					{% for n in message %}
+					<tr>
+						{% if n.sender_id == my_id %}
+						<td><p style="text-align:right">{{ n.datem | date:"d.m.Y H:i" }}  <br> {{ n.details }}</p></td>	
+						{% else %}
+						<td><p style="text-align:left">{{ n.datem | date:"d.m.Y H:i" }} <strong>{{ n.sender.username }} {{ n.sender.first_name }} {{ n.sender.last_name }}</strong> <br> {{ n.details }}</p></td>	
+						{% endif %}
+					</tr>
+					{% endfor %}
+					</table>
+				</div>
+			{% endif %}					
+		</div>				
+	</div>	
+	<div class="div-button-center">
+		<a class="btn btn-outline-info" style="width:100px; margin-top:5px" href="{% url 'index' %}">{% trans "Back" %}</a>    	
+	</div>
+</div>
+
+{% endblock content %}

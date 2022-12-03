@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "List" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "Boards" %}</h2>
+{% if board.count > 0 %}
+<div class="row">
+	<table id="myTable" class="table-manager" style="width:100%">
+		<thead>
+			<tr>
+				<th><p>{% trans "board_name" %}</p></th>
+				<th><p>{% trans "board_description" %}</p></th>
+				<th><p><a href="{% url 'board_create'%}">{% trans "Create" %}</a></p></th>				
+			</tr>
+		</thead>
+		<tbody>
+			{% for p in board %}
+			<tr>
+				<td><p>{{ p.name }}</p></td>
+				<td><p>{{ p.description }}</p></td>
+				<td>
+					<a href="{% url 'board_edit' p.id %}">{% trans "Change" %}</a> |
+					<a href="{% url 'board_read' p.id %}">{% trans "View" %}</a> |
+					<a onclick="return confirm('Удалить запись?')" href="{% url 'board_delete' p.id %}">{% trans "Delete" %}</a>
+				</td>			
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% else %}
+<a href="{% url 'board_create'%}">{% trans "Create" %}</a>
+{% endif %}
+{% endblock content %}
+

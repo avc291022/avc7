@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% trans "messages" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "messages" %}</h2>
+{% if message.count > 0 %}
+<div class="row">
+	<table id="myTable" class="table-manager" style="width:100%">
+		<thead>
+			<tr>
+				<th><p>{% trans "datem" %}</p></th>
+				<th><p>{% trans "source" %}</p></th>
+				<th><p>{% trans "recipient" %}</p></th>
+				<th><p>{% trans "details" %}</p></th>
+			</tr>
+		</thead>
+		<tbody>
+			{% for n in message %}
+			<tr>
+				<td>
+					<p>{{ n.datem | date:"d.m.Y H:i" }}</p>
+				</td>
+				<td>
+					<p><strong>{{ n.sender.first_name }} {{ n.sender.last_name }}</strong></p>						
+					<p>{{ n.sender.username }}</p>	
+				</td>
+				<td>
+					<p><strong>{{ n.recipient.first_name }} {{ n.recipient.last_name }}</strong></p>						
+					<p>{{ n.recipient.username }}</p>	
+				</td>
+				<td>
+					<p>{{ n.details }}</p>						
+				</td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+</div>
+{% else %}
+<!-- <a href="{% url 'message_create'%}">{% trans "Create" %}</a> -->
+{% endif %}
+{% endblock content %}
+

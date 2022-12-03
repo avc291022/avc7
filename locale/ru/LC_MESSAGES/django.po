@@ -1,0 +1,553 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-26 16:29+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\cutaway\models.py:37 .\cutaway\models.py:137
+#: .\templates\message\index.html:12
+msgid "datem"
+msgstr "Дата/время"
+
+#: .\cutaway\models.py:40 .\cutaway\models.py:146
+msgid "message_details"
+msgstr "Текст сообщения"
+
+#: .\cutaway\models.py:55 .\templates\board\index.html:12
+msgid "board_name"
+msgstr "Раздел форума"
+
+#: .\cutaway\models.py:56 .\templates\board\index.html:13
+msgid "board_description"
+msgstr "Описание раздела"
+
+#: .\cutaway\models.py:66
+msgid "topic_subject"
+msgstr "Тема форума"
+
+#: .\cutaway\models.py:67
+msgid "last_updated"
+msgstr "Последнее обновление"
+
+#: .\cutaway\models.py:70
+msgid "views"
+msgstr "Просмотров"
+
+#: .\cutaway\models.py:93
+msgid "message"
+msgstr "Сообщение"
+
+#: .\cutaway\models.py:95
+msgid "created_at"
+msgstr "Создано"
+
+#: .\cutaway\models.py:96
+msgid "updated_at"
+msgstr "Обновлено"
+
+#: .\cutaway\models.py:110 .\templates\news\index.html:12
+msgid "daten"
+msgstr "Дата"
+
+#: .\cutaway\models.py:111
+msgid "title_news"
+msgstr "Заголовок"
+
+#: .\cutaway\models.py:112
+msgid "details_news"
+msgstr "Детали"
+
+#: .\cutaway\models.py:113
+msgid "photo_news"
+msgstr "Фотография"
+
+#: .\cutaway\models.py:136
+msgid "message_id"
+msgstr "message id"
+
+#: .\cutaway\models.py:138
+msgid "sender_id"
+msgstr "sender id"
+
+#: .\cutaway\models.py:139
+msgid "sender_username"
+msgstr "Логин отправителя"
+
+#: .\cutaway\models.py:140
+msgid "sender_first_name"
+msgstr "Имя отправителя"
+
+#: .\cutaway\models.py:141
+msgid "sender_last_name"
+msgstr "Фамилия отправителя"
+
+#: .\cutaway\models.py:142
+msgid "recipient_id"
+msgstr "recipient id"
+
+#: .\cutaway\models.py:143
+msgid "recipient_username"
+msgstr "Логин получателя"
+
+#: .\cutaway\models.py:144
+msgid "recipient_first_name"
+msgstr "Имя получателя"
+
+#: .\cutaway\models.py:145
+msgid "recipient_last_name"
+msgstr "Фамилия получателя"
+
+#: .\cutaway\models.py:163
+msgid "auth_user_id"
+msgstr "user id"
+
+#: .\cutaway\models.py:164
+msgid "is_superuser"
+msgstr "Суперпользователь (да/нет)"
+
+#: .\cutaway\models.py:165
+msgid "username"
+msgstr "Логин"
+
+#: .\cutaway\models.py:166
+msgid "first_name"
+msgstr "Имя"
+
+#: .\cutaway\models.py:167
+msgid "last_name"
+msgstr "Фамилия"
+
+#: .\cutaway\models.py:168
+msgid "last_send_id"
+msgstr "id Последнее отправленное сообщение"
+
+#: .\cutaway\models.py:169 .\templates\message\list.html:29
+msgid "last_send_message"
+msgstr "Последнее отправленное сообщение"
+
+#: .\cutaway\models.py:170
+msgid "last_recipient_id"
+msgstr "id Последнее полученное сообщение"
+
+#: .\cutaway\models.py:171 .\templates\message\list.html:35
+msgid "last_recipient_message"
+msgstr "Последнее полученное сообщение"
+
+#: .\templates\base.html:36
+msgid "Home"
+msgstr "Главная"
+
+#: .\templates\base.html:44 .\templates\info\about.html:4
+msgid "about"
+msgstr "О нас"
+
+#: .\templates\base.html:47 .\templates\info\partners.html:4
+#: .\templates\info\partners.html:7
+msgid "partners"
+msgstr "Наши партнеры"
+
+#: .\templates\base.html:48 .\templates\info\services.html:4
+#: .\templates\info\services.html:7
+msgid "services"
+msgstr "Наши услуги"
+
+#: .\templates\base.html:49 .\templates\info\projects.html:4
+#: .\templates\info\projects.html:7
+msgid "projects"
+msgstr "Наши проекты"
+
+#: .\templates\base.html:50 .\templates\info\social.html:4
+#: .\templates\info\social.html:7
+msgid "social"
+msgstr "Социальная ответственность"
+
+#: .\templates\base.html:52 .\templates\info\career.html:4
+msgid "career"
+msgstr "Карьера"
+
+#: .\templates\base.html:54 .\templates\info\vacancies.html:3
+#: .\templates\info\vacancies.html:6
+msgid "vacancies"
+msgstr "Вакансии"
+
+#: .\templates\base.html:56 .\templates\contact.html:8
+msgid "contacts"
+msgstr "Контакты"
+
+#: .\templates\base.html:60 .\templates\news\create.html:6
+#: .\templates\news\edit.html:6 .\templates\news\read.html:6
+msgid "news"
+msgstr "Новости"
+
+#: .\templates\base.html:63 .\templates\info\video.html:4
+#: .\templates\info\video.html:7 .\templates\info\video.html:8
+msgid "video"
+msgstr "Видеогаллерея"
+
+#: .\templates\base.html:66 .\templates\info\photogallery.html:4
+#: .\templates\info\photogallery.html:28
+msgid "photogallery"
+msgstr "Фотогаллерея"
+
+#: .\templates\base.html:70
+msgid "message_list"
+msgstr "Список сообщений"
+
+#: .\templates\base.html:73
+msgid "forum"
+msgstr "Форум"
+
+#: .\templates\base.html:81
+msgid "boards"
+msgstr "Разделы форума"
+
+#: .\templates\base.html:82 .\templates\news\index.html:3
+#: .\templates\news\index.html:6 .\templates\news\list.html:4
+#: .\templates\news\list.html:7
+msgid "newss"
+msgstr "Новости"
+
+#: .\templates\base.html:84 .\templates\message\index.html:3
+#: .\templates\message\index.html:6 .\templates\message\list.html:4
+#: .\templates\message\list.html:7
+msgid "messages"
+msgstr "Сообщения"
+
+#: .\templates\base.html:89 .\templates\registration\my_account.html:4
+#: .\templates\registration\my_account.html:10
+msgid "My account"
+msgstr "Мой аккаунт"
+
+#: .\templates\base.html:90
+#: .\templates\registration\password_change_form.html:9
+#: .\templates\registration\password_change_form.html:15
+msgid "Change password"
+msgstr "Изменить пароль"
+
+#: .\templates\base.html:92
+msgid "Log out"
+msgstr "Выход"
+
+#: .\templates\base.html:97
+msgid "Log In"
+msgstr "Войти"
+
+#: .\templates\base.html:99 .\templates\registration\signup.html:4
+#: .\templates\registration\signup.html:10
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#: .\templates\board\create.html:3 .\templates\board\index.html:14
+#: .\templates\board\index.html:33 .\templates\message\index.html:41
+#: .\templates\news\create.html:3 .\templates\news\index.html:45
+msgid "Create"
+msgstr "Создать"
+
+#: .\templates\board\create.html:5 .\templates\board\edit.html:5
+#: .\templates\board\index.html:6 .\templates\board\read.html:5
+msgid "board"
+msgstr "Раздел форума"
+
+#: .\templates\board\create.html:12 .\templates\board\edit.html:12
+#: .\templates\news\create.html:13 .\templates\news\edit.html:13
+msgid "Save"
+msgstr "Сохранить"
+
+#: .\templates\board\create.html:13 .\templates\board\edit.html:13
+#: .\templates\board\read.html:18 .\templates\message\send.html:46
+#: .\templates\news\create.html:14 .\templates\news\edit.html:14
+#: .\templates\news\read.html:29
+msgid "Back"
+msgstr "Назад"
+
+#: .\templates\board\edit.html:3 .\templates\board\index.html:23
+#: .\templates\news\edit.html:3 .\templates\news\index.html:35
+msgid "Change"
+msgstr "Изменить"
+
+#: .\templates\board\index.html:3
+msgid "List"
+msgstr "Список"
+
+#: .\templates\board\index.html:24 .\templates\board\read.html:3
+#: .\templates\news\index.html:36
+msgid "View"
+msgstr "Посмотреть"
+
+#: .\templates\board\index.html:25 .\templates\news\index.html:37
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\templates\forum\edit_post.html:3 .\templates\forum\edit_post.html:8
+msgid "Edit post"
+msgstr "Изменить сообщение"
+
+#: .\templates\forum\edit_post.html:5 .\templates\forum\home.html:5
+#: .\templates\forum\new_topic.html:5 .\templates\forum\reply_topic.html:5
+#: .\templates\forum\topic_posts.html:5 .\templates\forum\topics.html:5
+msgid "Boards"
+msgstr "Разделы форума"
+
+#: .\templates\forum\edit_post.html:14
+#: .\templates\registration\my_account.html:15
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#: .\templates\forum\home.html:3 .\templates\forum\new_topic.html:3
+#: .\templates\forum\reply_topic.html:3 .\templates\forum\topic_posts.html:3
+#: .\templates\forum\topics.html:3
+msgid "Forum"
+msgstr "Форум"
+
+#: .\templates\forum\home.html:11
+msgid "Board"
+msgstr "Раздел"
+
+#: .\templates\forum\home.html:12
+msgid "Posts"
+msgstr "Сообщения"
+
+#: .\templates\forum\home.html:13
+msgid "Topics"
+msgstr "Темы"
+
+#: .\templates\forum\home.html:14
+msgid "Last Post"
+msgstr "Последний пост"
+
+#: .\templates\forum\home.html:40
+msgid "No posts yet."
+msgstr "Сообщений пока нет"
+
+#: .\templates\forum\new_topic.html:7 .\templates\forum\topics.html:12
+msgid "New topic"
+msgstr "Новая тема"
+
+#: .\templates\forum\new_topic.html:10
+msgid "Start a New Topic"
+msgstr "Начать новую тему"
+
+#: .\templates\forum\new_topic.html:14
+msgid "Post"
+msgstr "Пост"
+
+#: .\templates\forum\reply_topic.html:8 .\templates\forum\reply_topic.html:15
+msgid "Post a reply"
+msgstr "Опубликовать ответ"
+
+#: .\templates\forum\topic_posts.html:12
+msgid "Reply"
+msgstr "Ответить"
+
+#: .\templates\forum\topic_posts.html:38
+msgid "Edit"
+msgstr "Изменить"
+
+#: .\templates\forum\topics.html:17
+msgid "Topic"
+msgstr "Тема"
+
+#: .\templates\forum\topics.html:18
+msgid "Starter"
+msgstr "Инициатор"
+
+#: .\templates\forum\topics.html:19
+msgid "Replies"
+msgstr "Ответы"
+
+#: .\templates\forum\topics.html:20
+msgid "Views"
+msgstr "Просмотры"
+
+#: .\templates\forum\topics.html:21
+msgid "Last Update"
+msgstr "Последнее обновление"
+
+#: .\templates\forum\topics.html:33
+msgid "Pages"
+msgstr "Страницы"
+
+#: .\templates\forum\topics.html:38
+msgid "Last Page"
+msgstr "Последняя страница"
+
+#: .\templates\index.html:4
+msgid "App name"
+msgstr "AVC"
+
+#: .\templates\message\index.html:13
+msgid "source"
+msgstr "Источник"
+
+#: .\templates\message\index.html:14
+msgid "recipient"
+msgstr "Получатель"
+
+#: .\templates\message\index.html:15
+msgid "details"
+msgstr "Детали"
+
+#: .\templates\message\send.html:3 .\templates\news\read.html:3
+msgid "Read"
+msgstr "Просмотреть"
+
+#: .\templates\message\send.html:7
+msgid "user"
+msgstr "Логин"
+
+#: .\templates\message\send.html:19
+msgid "Messages"
+msgstr "Сообщение"
+
+#: .\templates\message\send.html:24
+msgid "Send"
+msgstr "Отправить"
+
+#: .\templates\news\index.html:13
+msgid "title"
+msgstr "Заголовок"
+
+#: .\templates\news\index.html:15
+msgid "Add"
+msgstr "Добавить"
+
+#: .\templates\registration\logged_out.html:4
+#: .\templates\registration\login.html:4
+#: .\templates\registration\password_change_done.html:3
+#: .\templates\registration\password_change_form.html:3
+#: .\templates\registration\password_reset_complete.html:4
+#: .\templates\registration\password_reset_confirm.html:4
+#: .\templates\registration\password_reset_done.html:4
+#: .\templates\registration\password_reset_form.html:4
+#: .\templates\registration\register_done.html:4
+msgid "App Name"
+msgstr "AVC"
+
+#: .\templates\registration\logged_out.html:6
+msgid "Logged out!"
+msgstr "Вышли!"
+
+#: .\templates\registration\logged_out.html:7
+msgid "Login again"
+msgstr "Войти снова"
+
+#: .\templates\registration\login.html:7
+msgid "Incorrect login or password"
+msgstr "Неверный логин или пароль"
+
+#: .\templates\registration\login.html:12
+msgid "You dont have access"
+msgstr "У вас нет доступа"
+
+#: .\templates\registration\login.html:14
+msgid "Login to see this page"
+msgstr "Войдите, чтобы увидеть эту страницу"
+
+#: .\templates\registration\login.html:22
+msgid "Authorization"
+msgstr "Авторизация"
+
+#: .\templates\registration\login.html:27
+msgid "Login"
+msgstr "Авторизоваться"
+
+#: .\templates\registration\login.html:33
+msgid "Lost password?"
+msgstr "Забыли пароль?"
+
+#: .\templates\registration\login.html:34
+#: .\templates\registration\signup.html:15
+msgid "Create an account"
+msgstr "Завести аккаунт"
+
+#: .\templates\registration\password_change_done.html:5
+msgid "Password changed"
+msgstr "Пароль изменен"
+
+#: .\templates\registration\password_reset_complete.html:6
+msgid "Password reset completed!"
+msgstr "Сброс пароля завершен!"
+
+#: .\templates\registration\password_reset_complete.html:7
+msgid "Log in again?"
+msgstr "Войти снова?"
+
+#: .\templates\registration\password_reset_confirm.html:5
+#: .\templates\registration\password_reset_confirm.html:12
+msgid "Password reset confirmation"
+msgstr "Подтверждение сброса пароля"
+
+#: .\templates\registration\password_reset_confirm.html:18
+#: .\templates\registration\password_reset_form.html:10
+#: .\templates\registration\password_reset_form.html:16
+msgid "Reset password"
+msgstr "Сброс пароля"
+
+#: .\templates\registration\password_reset_confirm.html:26
+msgid "Please enter (and confirm) your new password."
+msgstr "Пожалуйста, введите (и подтвердите) новый пароль."
+
+#: .\templates\registration\password_reset_confirm.html:32
+msgid "New password:"
+msgstr "Новый пароль:"
+
+#: .\templates\registration\password_reset_confirm.html:37
+msgid "Confirm password:"
+msgstr "Подтвердить пароль:"
+
+#: .\templates\registration\password_reset_confirm.html:48
+msgid "Password reset failed"
+msgstr "Не удалось сбросить пароль"
+
+#: .\templates\registration\password_reset_confirm.html:49
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr "Ссылка для сброса пароля недействительна, возможно, потому, что она уже использовалась. Пожалуйста, запросите новый сброс пароля"
+
+#: .\templates\registration\password_reset_done.html:6
+msgid "Password reset"
+msgstr "Восстановление пароля"
+
+#: .\templates\registration\password_reset_done.html:7
+msgid "Check your email"
+msgstr "Проверьте свою электронную почту"
+
+#: .\templates\registration\password_reset_email.html:2
+msgid "Asked password reset email"
+msgstr "Электронная почта для сброса пароля"
+
+#: .\templates\registration\password_reset_email.html:2
+msgid "Follow the link below:"
+msgstr "Перейдите по ссылке ниже:"
+
+#: .\templates\registration\register_done.html:10
+msgid "Welcome"
+msgstr "Добро пожаловать"
+
+#: .\templates\registration\register_done.html:11
+msgid "Your account has been successfully created."
+msgstr "Ваша учетная запись успешно создана"
+
+#: .\templates\registration\register_done.html:11
+#: .\templates\registration\signup.html:20
+msgid "Log in"
+msgstr "Авторизоваться"
+
+#: .\templates\registration\signup.html:20
+msgid "Already have an account?"
+msgstr "У вас уже есть аккаунт?"

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}{% endblock title %}
+{% block header %}{% endblock header %} 
+{% block content %}
+<div class="row">
+	<div class="col-md-3">
+		<h5 align="center">{% trans "contacts" %}</h5>
+		<h3 align="center">Головной офис в г. Алматы</h3>
+		<p>Республика Казахстан, 050000, г. Алматы, Медеуский район, пр. Достык, 87В </p>
+		<address>
+			<a href="mailto:info@avcgroup.kz">info@avcgroup.kz</a>						
+		</address>				
+		<p><a href="tel+77273131872">+7-(727)-313-18-72</a><p>
+		<h4 align="center">Офис и производственные помещения в г. Павлодар</h4>
+		<p>Республика Казахстан, 140000, г. Павлодар, ул. Химкомбинатовская 1</p>
+		<address>
+			<a href="mailto:info@avcgroup.kz">info@avcgroup.kz</a>						
+		</address>						
+	</div>
+	<div class="col-md-9" style="position:relative;overflow:hidden;">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.0590003672623!2d76.95617664513574!3d43.24110205192458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836efbb14f307b%3A0xbad087df8c8dfed!2z0L_RgNC-0YHQv9C10LrRgiDQlNC-0YHRgtGL0LogODcsINCQ0LvQvNCw0YLRiyAwNTAwMDA!5e0!3m2!1sru!2skz!4v1669521879996!5m2!1sru!2skz" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+	</div>
+</div>
+{% endblock content %}

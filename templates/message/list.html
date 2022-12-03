@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block title %}{% trans "messages" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "messages" %}</h2>
+<hr>
+{% if view_user_last_message.count > 0 %}
+<div class="row">
+	<table id="myTable" class="table-manager" style="width:100%">
+		<thead>
+			<tr>
+				<th><p>{{ my_user }}</p></th>				
+			</tr>
+		</thead>
+		<tbody>
+			{% for n in view_user_last_message %}
+			<tr>
+				<td>
+					<div class="card">
+						<div class="card-header">
+							<h5><a href="{% url 'message_send' n.id %}"> {{ n.first_name }} {{ n.last_name }}</a></h5>							
+							<p>{{ n.username }}</p>
+						</div>
+						<div class="card-body">	
+							<div class="row">
+								<div class="col-md-6">
+									{% if n.last_recipient_id == my_id and n.last_recipient_message != None %}
+										<p><strong>{% trans "last_send_message" %}</strong></p>
+										<p>{{ n.last_recipient_message }}</p>
+									{% endif %}
+								</div>								
+								<div class="col-md-6">
+									{% if n.last_send_id == my_id and n.last_send_message != None %}
+										<p><strong>{% trans "last_recipient_message" %}</strong></p>
+										<p>{{ n.last_send_message }}</p>										
+									{% endif %}									
+								</div>
+							</div>							
+						</div>	
+						<div class="card-footer">
+						</div>						
+					</div>
+				</td>	
+			</tr>
+			{% endfor %}	
+		</tbody>
+	</table>	
+</div>
+{% endif %}
+{% endblock content %}
+

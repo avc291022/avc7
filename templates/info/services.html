@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block title %}{% trans "services" %}{% endblock title %}
+{% block header %}{% endblock header %}
+{% block content %}
+<h2>{% trans "services" %}</h2>
+<div class="row" >
+	<div class="col-md-3">
+		<img class="img-center2" src="{% static 'images/services01.jpg' %}" alt="services" >
+	</div>
+	<div class="col-md-9">
+		<div class="accordion accordion-flush" >
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-heading01">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse01" aria-expanded="false" aria-controls="flush-collapse01">
+						АВТОМАТИЗАЦИЯ ТЕХНОЛОГИЧЕСКИХ ПРОЦЕССОВ
+					</button>
+				</h2>
+				<div id="flush-collapse01" class="accordion-collapse collapse" aria-labelledby="flush-heading01" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<ul>
+							<li>Разработка и внедрение автоматизированных систем управления и систем противоаварийной защиты технологических процессов</li>
+							<li>Сервисно-техническое обслуживание контрольно-измерительных приборов и контроллерного оборудования</li>
+							<li>Внедрение MES-систем</li>
+							<li>Монтаж контрольно-измерительных приборов</li>
+							<li>Внедрение ИС учёта нефти и газового конденсата</li>
+							<li>Цифровизация нефтяных и газовых месторождений</li>
+							<li>Разработка рабочего проекта АСУТП</li>
+							<li>Внедрение автоматизированных систем мониторинга коррозии</li>
+							<li>Внедрение автоматизированных систем вибродиагностики динамического оборудования</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="accordion-header" id="flush-heading02">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse02" aria-expanded="false" aria-controls="flush-collapse02">
+						ТЕХНОЛОГИЧЕСКИЙ КОНТРОЛЬ ПРОЦЕССОВ НЕФТЕПЕРЕРАБОТКИ И НЕФТЕХИМИИ
+					</button>
+				</h2>
+				<div id="flush-collapse02" class="accordion-collapse collapse" aria-labelledby="flush-heading02" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<ul>
+							<li>Контроль параметров технологического режима и качества входящего сырья и готовой продукции на всех стадиях переработки нефти и газа</li>
+							<li>Разработка технологических регламентов и технологий производства нефтепереработки и нефтехимии</li>
+							<li>Осуществление инженерной проработки с последующим выбором наилучшего технологического решения</li>
+							<li>«Root-Cause» анализ технологических процессов на предмет выявления ограничивающих факторов с последующей оптимизацией процесса</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="accordion-header" id="flush-heading03">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse03" aria-expanded="false" aria-controls="flush-collapse03">
+						ПРОМЫШЛЕННАЯ ГАЗОВАЯ ХРОМАТОГРАФИЯ
+					</button>
+				</h2>
+				<div id="flush-collapse03" class="accordion-collapse collapse" aria-labelledby="flush-heading03" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<ul>
+							<li>Разработка и внедрение автоматизированных систем качественного анализа технологических газов и жидкостей</li>
+							<li>Сервисно-техническое обслуживание автоматизированных систем качественного анализа технологических газов и жидкостей</li>
+							<li>Разработка и внедрение программно-аппаратных комплексов по анализам товарного газа для коммерческих узлов учёта</li>
+							<li>Монтаж поточных газохроматографических систем</li>
+							<li>Проведение предпроектных обследований и разработка рабочего проекта хроматографических систем анализа газов и жидкостей</li>
+							<li>Интеграция с РСУ</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="accordion-header" id="flush-heading04">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse04" aria-expanded="false" aria-controls="flush-collapse04">
+						АВТОМАТИЗИРОВАННЫЕ СИСТЕМЫ ЭКОЛОГИЧЕСКОГО МОНИТОРИНГА ЭМИССИЙ
+					</button>
+				</h2>
+				<div id="flush-collapse04" class="accordion-collapse collapse" aria-labelledby="flush-heading04" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<ul>
+							<li>Разработка и внедрение автоматизированных систем экологического мониторинга эмиссий</li>
+							<li>Сервисно-техническое обслуживание систем экологического мониторинга</li>
+							<li>Внедрение аппаратно-программных комплексов по учёту валовых выбросов</li>
+							<li>Монтаж поточных оптических и газохроматографических систем</li>
+							<li>Монтаж систем по определению расхода и запылённости дымового газа</li>
+							<li>Проведение предпроектных обследований и разработка рабочего проекта по АСМ</li>
+							<li>Интеграция с системой государственного контролирующего органа по контролю эмиссий предприятия</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="accordion-header" id="flush-heading05">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse05" aria-expanded="false" aria-controls="flush-collapse05">
+						КОМПРЕССОРНЫЕ УСТАНОВКИ И ФИЛЬТРАЦИОННЫЕ СИСТЕМЫ
+					</button>
+				</h2>
+				<div id="flush-collapse05" class="accordion-collapse collapse" aria-labelledby="flush-heading05" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<ul>
+							<li>Комплексные решения на базе насосно-компрессорного оборудования (НКО) производства HITACHI, MITSUI, SIAD, Buhler</li>
+							<li>Подбор систем фильтрации производства Solydor, Honeywell</li>
+							<li>Модульные решения «под ключ» на очистку и подготовку авиакеросина марки Jet A-1, РТ</li>
+							<li>Сервисно-техническое обслуживание НКО HITACHI, MITSUI, SIAD, Buhler</li>
+							<li>Подбор и поставка запасных частей к НКО</li>
+						</ul>
+					</div>
+				</div>
+				<h2 class="accordion-header" id="flush-heading06">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse06" aria-expanded="false" aria-controls="flush-collapse06">
+						КАТАЛИЗАТОРЫ, АДСОРБЕНТЫ, ИНГИБИТОРЫ ДЛЯ НЕФТЕПЕРЕРАБОТКИ И НЕФТЕХИМИИ
+					</button>
+				</h2>
+				<div id="flush-collapse06" class="accordion-collapse collapse" aria-labelledby="flush-heading06" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<ul>
+							<li>Подбор и комплексная поставка каталитических систем для установки годроочистки</li>
+							<li>Проведение опытно-промышленных испытаний и подбор малотоннажной химии</li>
+							<li>Подбор и поставка деэмульгаторов, пеногасителей и ингибиторов, присадок к моторным топливам</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="services" style="background-image: url({% static 'images/services02.jpg' %})" >
+	<br>
+	<br>
+	<p>Инновационная услуга компании</p>
+	<br>
+	<h1>AVC LENS - ИНТЕЛЛЕКТУАЛЬНЫЕ ОЧКИ</h1>
+	<br>
+	<p>Технический аудит и ремонт оборудования онлайн со специалистами высокой категории</p>
+	<br>
+	<ul>
+		<li>Для возможности удаленного контроля обслуживания оборудования, наш технический эксперт с интеллектуальными очками AVC LENS находясь на объекте связывается с зарубежными коллегами</li>
+		<li>К AVC LENS подключается сертифицированный заводом производителя специалист, что дает возможность ему видеть процесс обслуживания от первого лица</li>
+		<li>Физическую поломку или обслуживание оборудования проводит технический эксперт компании, но контролирует его действия специалист завода производителя</li>
+		<li>Ремонт под надзором позволяет сохранить заводскую гарантию на оборудование</li>
+		<li>У заказчика сохраняется видео запись всего процесса ремонта или обслуживания</li>
+	</ul>
+	<br>
+	<br>
+</div>
+<div class="services" style="background-image: url({% static 'images/services03.jpg' %})">
+	<br>
+	<br>
+	<p>Инновационная услуга компании</p>
+	<br>
+	<h1>АДДИТИВНЫЕ ТЕХНОЛОГИИ (3D-ПЕЧАТЬ)</h1>
+	<br>
+	<p>Это способы формообразования индивидуализированных товаров различной сложности в новых производственных технологиях после проектирования CAD/CAE/CAM-системами</p>
+	<br>
+	<ul>
+		<li>3D-ПЕЧАТЬ</li>
+		<li>СТЕРЕОЛИТОГРАФИЯ</li>
+		<li>ПОСЛОЙНОЕ НАЛОЖЕНИЕ ПОЛИМЕРА</li>
+		<li>ЛАЗЕРНОЕ СПЕКАНИЕ МЕТАЛЛИЧЕСКИХ МАТЕРИАЛОВ</li>
+		<li>ПРЯМОЕ ЛАЗЕРНОЕ ВЫРАЩИВАНИЕ МЕТАЛЛИЧЕСКИХ ИЗДЕЛИЙ</li>
+		<li>ХОЛОДНОЕ ГАЗОДИНАМИЧЕСКОЕ НАПЫЛЕНИЕ</li>
+	</ul>
+	<br>
+	<br>
+</div>
+{% endblock content %}
